@@ -10,7 +10,10 @@ inputs:
     default: 'us-east-1'
   dist-folder:
     description: 'The folder containing the deployable files'
-    required: true     
+    required: true
+outputs:
+  website-url:
+    description: 'The URL of the deployed website'     
 runs:
   using: 'node16'
   main: 'main.js'
